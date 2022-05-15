@@ -18,7 +18,7 @@ To run the WebGPU version of the algorithm, you'll need to install a browser wit
 
 #### Rust Version
 
-For performance comparison purposes, a CPU-only Rust version of the same algorithm is included in the [`rustimpl`](rustimpl/) directory.  See [`rustimpl/README.md`] for instructions on how to build and run it.
+For performance comparison purposes, a CPU-only Rust version of the same algorithm is included in the [`rustimpl`](rustimpl/) directory.  See [`rustimpl/README.md`](rustimpl/README.md) for instructions on how to build and run it.
 
 ## Theory of Operation
 
