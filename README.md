@@ -30,7 +30,7 @@ For performance comparison purposes, a CPU-only Rust version of the same algorit
 
 Monte Carlo methods are one of the least useful ways of computing the digits of π. Nevertheless, it's a nice way of experimenting with scientific computing on GPUs because these algorithms parallelize easily.  The method used here is from the article [Monte Carlo estimates of pi](https://blogs.sas.com/content/iml/2016/03/14/monte-carlo-estimates-of-pi.html). As that article explains, the curve y=sqrt(1-x<sup>2</sup>) on the interval 0 < x < 1 is a quarter of a unit radius circle, so the area under this curve π/4.
 
-To find the area under that curve, it suffices to calcuate the average value of sqrt(1-x<sup>2</sup>) for a large number of random `x` between 0 and 1 because the average value of any function on the interval `[0,1)` is the same as taking the integral of that function between 0 and 1.  The article explains this in more detail.
+To find the area under that curve, it suffices to calcuate the average value of sqrt(1-x<sup>2</sup>) for a large number of random `x` between 0 and 1 because the average value of any continuous function on the interval `[0,1)` is the same as taking the integral of that function between 0 and 1.  The article explains this in more detail.
 
 Our general strategy, then, is to generate a large number of random `x` values between 0 and 1, compute sqrt(1-x<sup>2</sup>), and average these values to get an estimate of π/4.  We multiply this estimate by 4 to get π.
 
